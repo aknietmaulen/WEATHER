@@ -24,7 +24,7 @@ WeatherApp is a simple web application that provides real-time weather informati
 
 To run WeatherApp locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/WeatherApp.git`
+1. Clone the repository: `git clone https://github.com/aknietmaulen/WEATHER.git`
 2. Navigate to the project directory: `cd WeatherApp`
 3. Install dependencies: `npm install`
 4. Create a `.env` file in the root directory and add your API keys:
