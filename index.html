@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body style="background-color: powderblue;">
+    <nav class="navbar navbar-expand-lg container">
+        <div class="container-fluid">
+            <img src="img/calc_logo.png" alt="" srcset="" class="logo">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="ms-auto">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold" aria-current="page" href="/">WeatherApp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold" href="#contact">Contact me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-5">
+        <div class="search-box">
+            <i class="bx bxs-map"></i>
+            <input type="text" placeholder="Enter your location" class="form-control" id="cityInput" style="color:black">
+            <button class="bx bx-search btn btn-primary" onclick="getWeather()"></button>
+        </div>
+
+        <div class="row mt-5">
+            <div class="cols-6 col-md-6">
+                <div class="weather-box text-center">
+                    <p class="temperature fw-bold"><span></span></p>
+                    <p class="description"></p>
+                    <p class="sunset-time"></p>
+                    <p class="pressure"><span></span> </p>
+                    <p class="humidity"><span></span></p>
+                    <p class="feels-like"><span></span></p>
+                    <p class="current-time"></p>
+                </div>
+            </div>
+            <div class="cols-5 col-md-5">
+                <div id="map" class="map-location"></div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div id="weatherInfo">
+                <p class="city-info"></p>
+            </div>
+        </div>
+
+    </div>
+    <div id="contact" class="container-fluid mt-5">
+        <footer class="py-5">
+            <div class="text-center col-md-9 col-sm-12 mx-auto">
+                <p>&copy; 2023 Akniet Maulen | SE-2204 </p>
+                <p>Email: akniet.maulenova.2017@gmail.com</p>
+                <p>Connect with me: <a href="https://t.me/maulen_akniet" target="_blank">Telegram</a></p>
+                <p>Project: Weather App</p>
+            </div>
+        </footer>
+        
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
