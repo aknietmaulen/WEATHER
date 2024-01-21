@@ -25,15 +25,10 @@ WeatherApp is a simple web application that provides real-time weather informati
 To run WeatherApp locally, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/aknietmaulen/WEATHER.git`
-2. Navigate to the project directory: `cd WeatherApp`
+2. Navigate to the project directory: `cd WEATHER`
 3. Install dependencies: `npm install`
-4. Create a `.env` file in the root directory and add your API keys:
-
-   ```env
-   API_KEY=your_openweathermap_api_key
-   TIMEZONE_API_KEY=your_timezone_api_key
-Start the server: node app.js
-Open your browser and go to http://localhost:3000
+4.Start the server: node app.js
+5.Open your browser and go to http://localhost:3000
 
 ## Dependencies
 Express
